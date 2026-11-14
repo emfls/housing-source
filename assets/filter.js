@@ -1,0 +1,1 @@
+export function search(entries,q='',category=''){const term=q.trim().toLocaleLowerCase();return entries.filter(e=>(!category||category===e.category)&&[e.title,e.category,e.agency,e.intro].join(' ').toLocaleLowerCase().includes(term));}
